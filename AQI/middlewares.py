@@ -41,7 +41,7 @@ class AqiDownloaderMiddleware(object):
         if url != 'https://www.aqistudy.cn/historydata/':
             '''只有请求动态界面时才使用'''
             # 创建浏览器对象
-            # 创建对为屋头浏览器
+            # 创建对为无头浏览器
             driver = webdriver.Chrome()
             # 发送get请求
             driver.get(url)
